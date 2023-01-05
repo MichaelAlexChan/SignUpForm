@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet">
+    <title>Sign-Up Form</title>
+</head>
+<script>
+    function confirmPass() {
+        let pw1 = document.getElementById("pwd");
+        let pw2 = document.getElementById("cnfrmPwd");
+
+        if (pw1 != pw2) {
+            alert("Passwords didn't match");
+        }
+        else {
+            alert("Password created successfully");
+        }
+    }
+</script>
+
+<body>
+    <div class="container">
+
+        <div id="col-left">
+            <div id="logo">
+                <img src="Assets/odin-logo.png" alt="A cartoon Norseman, Logo of The Odin Project">
+                <h1>Odin</h1>
+            </div>
+            <p>Photo by <a
+                    href="https://unsplash.com/@sotti?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Shifaaz
+                    shamoon</a> on <a
+                    href="https://unsplash.com/photos/9K9ipjhDdks?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+
+            </p>
+        </div>
+
+        <div id="col-right">
+            <div id="content">
+                <p>This is not a real form! However, you can fill it out and imagine that it will help you achieve your
+                    goals. Sign up below to get started</p>
+                <p>Go ahead, don't be shy!</p>
+            </div>
+            <div id="form-container">
+                <form id="accountform">
+                    <h2>Sign up below!</h2>
+                    <div class="row">
+                        <div class="labelholder">
+                            <label for="firstname">FIRST NAME</label>
+                            <input type="text" id="firstname" name="firstname" maxlength="50" required>
+                        </div>
+                        <div class="labelholder">
+                            <label for="lastname">LAST NAME</label>
+                            <input type="text" id="lastname" name="lastname" maxlength="50" required>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labelholder">
+                            <label for="email">EMAIL (required)</label>
+                            <input type="email" id="email" name="useremail" maxlength="130" required>
+                        </div>
+                        <div class="labelholder">
+                            <label for="phone">PHONE NUMBER (optional)</label>
+                            <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9}{3}"
+                                title="Please enter a valid Canadian phone number (ie. xxx-xxx-xxxx)">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="labelholder">
+                            <label for="pwd">PASSWORD</label>
+                            <input type="password" id="pwd" name="pwd" maxlength="30" required>
+                        </div>
+                        <div class="labelholder">
+                            <label for="cnfrmPwd">CONFIRM PASSWORD</label>
+                            <input type="password" id="cnfrmPwd" name="cnfrmPwd" maxlength="30" required>
+                        </div>
+                    </div>
+                </form>
+                <button type="submit" form="accountform" onclick="confirmPass()">Create Account</button>
+                <div class="row" id="existing">
+                    <h4>Already have an account?</h4>
+                    <a href="url">Log in</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

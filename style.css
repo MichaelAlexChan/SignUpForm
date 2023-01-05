@@ -1,0 +1,129 @@
+@font-face {
+    font-family: nord-font-import;
+    src: url(Assets/Norse-Bold.otf);
+}
+
+html, body {
+    font-family: sans-serif;
+    color: #2d2e2e;
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    font-size: 16px;
+}
+
+.container {
+    height: 100vh;
+    display: flex;
+}
+
+#col-left {
+    background-image: url(/Assets/shifaaz-shamoon-9K9ipjhDdks-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+}
+
+#logo  {
+    padding: 15px;
+    background-color: rgba(0,0,0,0.7);
+    margin-top: 250px;
+    margin-bottom: auto;
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+}
+
+#logo img {
+    height: 125px;
+}
+
+#logo h1 {
+    margin: 0;
+    padding: 0;
+    font-family: nord-font-import, sans-serif;
+    color: white;
+    font-size: 95px;
+}
+
+#col-left p {
+    background-color: white;
+    opacity: 80%;
+    font-size: 20px bold;
+    align-self: center;
+}
+
+#col-right {
+    background-color: #e8e7e6;
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    padding: 10vh 0 10vh 0;
+}
+
+#content, form{
+    padding-left: 5vh;
+} 
+
+#content {
+    font-size: 22px;
+    font-weight: bold;
+    padding-left: 5vh;
+}
+
+form {
+    margin-top: 70px;
+    background-color: white;
+    padding-top: 5px;
+    padding-bottom: 30px;
+    box-shadow: 0 2px 5px gray;
+    margin-bottom: 40px;
+}
+
+label { 
+    display: block;
+    font-size: .8em ;
+    font-weight: bold;
+    letter-spacing: .2em;
+}
+
+input {
+    width: 400px;
+    height: 1.75em;
+}
+
+.row {
+    display: flex;
+    gap: 10vh;
+    padding-bottom: 15px;
+}
+
+.labelholder {
+    display:flex;
+    flex-direction: column;
+}
+
+button {
+    margin-left: 5vh;
+    margin-bottom: 2vh;
+    background-color: #73b9bd;
+    padding: .8em 50px;
+    border: none;
+    border-radius: 6px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+}
+
+#existing {
+    margin-left: 5vh;
+    display: flex;
+    gap: 2px;
+    align-items: center;
+}
+
+#existing a {
+    color: #73b9bd;
+}
